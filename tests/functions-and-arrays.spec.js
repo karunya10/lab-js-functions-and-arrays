@@ -31,9 +31,13 @@ describe("Iteration 1 | Find the maximum", () => {
     it("should return either arguments - if both arguments are equal", () => {
       expect(maxOfTwoNumbers(4, 4)).toBe(4);
     });
+
+    it("should return false -if either argument is not a number", () => {
+      const result = maxOfTwoNumbers("Str1", "Str2");
+      expect(result).toBe(false);
+    });
   });
 });
-
 
 describe("Iteration 2 | Find the Longest Word", () => {
   describe("function findLongestWord()", () => {
@@ -61,10 +65,8 @@ describe("Iteration 2 | Find the Longest Word", () => {
       expect(findLongestWord(["foo", "bar"])).toBe("foo");
       expect(findLongestWord(["bar", "foo"])).toBe("bar");
     });
-
   });
 });
-
 
 describe("Iteration 3 | Sum Numbers", () => {
   describe("function sumNumbers()", () => {
@@ -86,7 +88,6 @@ describe("Iteration 3 | Sum Numbers", () => {
   });
 });
 
-
 describe("Iteration 4 | Numbers Average", () => {
   describe("function averageNumbers()", () => {
     it("should be defined as a function", () => {
@@ -106,7 +107,6 @@ describe("Iteration 4 | Numbers Average", () => {
     });
   });
 });
-
 
 describe("Iteration 5 | Find Elements", () => {
   describe("function doesWordExist()", () => {
